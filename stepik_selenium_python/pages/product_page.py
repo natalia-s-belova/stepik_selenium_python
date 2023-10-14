@@ -19,3 +19,9 @@ class ProductPage(BasePage):
 
     def get_product_price(self):
         return self.browser.find_element(*ProductPageLocators.PRODUCT_PRICE).text
+
+    def should_not_have_success_message(self):
+        assert self.is_not_element_present(*ProductPageLocators.PRODUCT_TITLE_IN_NOTIFICATION), 'Success message is shown'
+
+    def should_success_message_disappear(self):
+        assert self.is_disappeared(*ProductPageLocators.PRODUCT_TITLE_IN_NOTIFICATION), 'Success message is not disappeared'
