@@ -1,5 +1,5 @@
-from stepik_selenium_python.pages.locators import ProductPageLocators
-from stepik_selenium_python.pages.base_page import BasePage
+from .locators import ProductPageLocators
+from .base_page import BasePage
 
 
 class ProductPage(BasePage):

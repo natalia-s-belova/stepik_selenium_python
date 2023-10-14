@@ -2,7 +2,7 @@ from selenium.common.exceptions import NoSuchElementException, TimeoutException,
 import math
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from stepik_selenium_python.pages.locators import BasePageLocators
+from .locators import BasePageLocators
 
 
 class BasePage():
